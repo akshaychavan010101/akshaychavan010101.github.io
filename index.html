@@ -1,12 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-</head>
-<body>
-    <h1>This is my Portfolio</h1>
-</body>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5cb8a0be4f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>MEETME</h1>
+        </div>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li>
+            <a href="#">RESUME <i class="fa-solid fa-download"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div id="home-content-div">
+          <div id="photo-div">
+            <img src="./photo.png" alt="Error" />
+          </div>
+          <div id="bio-div">
+            <h2>Its me</h2>
+            <p id="bio-text"></p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Sed lobortis ante at diam venenatis, sed aliquet nulla lobortis. Nulla
+          facilisi. Nam semper lorem eget quam gravida.
+        </p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <p>
+          Nullam eu magna eget velit bibendum aliquet. Maecenas sit amet elit in
+          est fringilla laoreet a nec turpis.
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>
+          Vivamus quis dui feugiat, molestie libero quis, maximus orci. Nulla
+          facilisi. Aliquam euismod ligula a lacinia bibendum.
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div id="contact-container">
+          <div id="left-contact">
+            <div>
+              <h3>Want to get in touch? Look below</h3>
+              <p>
+                Got a project? Reach out and let's work together on something
+                exciting. Big or small. Mobile or web.
+              </p>
+            </div>
+            <table>
+              <tr>
+                <td id="mail-logo"><i class="fa-solid fa-envelope" ></i></td>
+                <td>akshaychavan010101@gmail.com</td>
+              </tr>
+              <tr>
+                <td><i class="fa-brands fa-github"></i></td>
+                <td>akshaychavan010101</td>
+              </tr>
+              <tr>
+                <td id="linkdin-logo"><i class="fa-brands fa-linkedin"></i></td>
+                <td>akshay112</td>
+              </tr>
+              <tr>
+                <td id="phone-logo"><i class="fa-solid fa-phone"></i></td>
+                <td>+91 9373849068</td>
+              </tr>
+              <tr>
+                <td id="location-logo"><i class="fa-sharp fa-solid fa-location-dot"></i></td>
+                <td>Sambhajinagar,MH</td>
+              </tr>
+            </table>
+          </div>
+          <div id="right-contact">
+            <div style="text-align: left; width: 70%; margin: auto;"><h3>Message me</h3></div>
+            <form action="">
+              <div id="contact-name-email-div">
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+              </div>
+              <input
+                type="text"
+                placeholder="Subject"
+                required
+                id="sub-input-bar"
+              />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="4"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit" id="send-btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
