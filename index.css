@@ -124,7 +124,7 @@ section {
   margin-bottom: 1rem;
 }
 
-#resume-btn {
+#resume-button-2 {
   font-size: 1.5rem;
   font-weight: 100;
   text-align: center;
@@ -138,7 +138,7 @@ section {
   text-decoration-line: none;
 }
 
-#resume-btn:hover {
+#resume-button-2:hover {
   background-color: #000000;
   color: white;
   cursor: pointer;
