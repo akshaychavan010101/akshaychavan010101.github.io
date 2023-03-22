@@ -25,9 +25,9 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="nav-menu">
         <div class="logo">
-          <h1>AKSHAY CHAVAN</h1>
+          <h1 id="user-detail-name">AKSHAY CHAVAN</h1>
         </div>
         <div class="hamburger">
           <div class="bar"></div>
@@ -40,10 +40,11 @@
           <li><a href="#skills">SKILLS</a></li>
           <li><a href="#projects">PROJECTS</a></li>
           <li><a href="#contact">CONTACT</a></li>
-          <li class="resume-btn-bar">
+          <li class="resume-btn-bar nav-link resume" id="resume-button-1">
             <a
               href="./images/Akshay-Chavan-Resume.pdf"
               download="Akshay-Chavan-Resume"
+              id="resume-link-1"
               >RESUME <i class="fa-solid fa-download"></i
             ></a>
           </li>
@@ -54,145 +55,209 @@
     <main>
       <!-- home -->
 
-      <section id="home">
+      <section id="home" class="nav-link home">
         <div>
-          <h3>Hello, I'm a</h3>
+          <h3>
+            <img
+              src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
+              width="35"
+            />
+            Hello, I'm a
+          </h3>
           <h1>Full Stack Web Developer</h1>
           <a
             href="./images/Akshay-Chavan-Resume.pdf"
             download="Akshay-Chavan-Resume"
-            class="resume-btn-bar"
+            class="resume-btn-bar nav-link resume"
             id="resume-btn"
+            id="resume-button-2"
+            id="resume-link-2"
             >RESUME</a
           >
         </div>
       </section>
 
       <!-- about -->
-      <section id="about">
+      <section id="about" class="nav-link about">
         <h2>About me</h2>
         <div id="about-content-div">
           <div id="photo-div">
-            <img src="./photo-modified.png" alt="Error" />
+            <img src="./photo-modified.png" class="home-img" alt="Error" />
           </div>
           <div id="bio-div">
             <h2>Its me</h2>
-            <p id="bio-text"></p>
+            <p id="user-detail-intro"></p>
           </div>
         </div>
       </section>
 
       <!-- skills -->
-      <section id="skills">
+      <section id="skills" class="nav-link skills">
         <h2>Skills</h2>
         <div id="skills-container">
-          <div>
+          <div class="skills-card">
             <img
+              class="skills-card-img"
               src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"
               alt=""
             />
           </div>
-          <div>
+          <div class="skills-card">
             <img
+              class="skills-card-img"
               src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg"
               alt=""
             />
           </div>
-          <div>
-            <img src="./images/nodejsLogo.png" alt="" />
+          <div class="skills-card">
+            <img class="skills-card-img" src="./images/nodejsLogo.png" alt="" />
           </div>
 
-          <div>
+          <div class="skills-card">
             <img
+              class="skills-card-img"
               src="https://i0.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500&ssl=1&w=640"
               alt=""
             />
           </div>
-          <div>
-            <img src="./images/express logo.png" alt="" />
+          <div class="skills-card">
+            <img
+              class="skills-card-img"
+              src="./images/express logo.png"
+              alt=""
+            />
           </div>
-          <div>
-            <img src="./images/mongoose Logo.png" alt="" />
+          <div class="skills-card">
+            <img
+              class="skills-card-img"
+              src="./images/mongoose Logo.png"
+              alt=""
+            />
           </div>
-          <div>
-            <img src="./images/mongoDBLogo.png" alt="" />
+          <div class="skills-card">
+            <img
+              class="skills-card-img"
+              src="./images/mongoDBLogo.png"
+              alt=""
+            />
           </div>
-          <div>
-            <img src="./images/mysql.svg" alt="" />
+          <div class="skills-card">
+            <img class="skills-card-img" src="./images/mysql.svg" alt="" />
           </div>
         </div>
       </section>
 
       <!-- projects -->
-      <section id="projects">
+      <section id="projects" class="nav-link projects">
         <h2>Projects</h2>
         <div id="project-card-div">
-          <div>
+          <div class="project-card">
             <div>
-              <img
-                src="./images/flexiwheel screenshot.png"
-                alt="flexiwheel"
-              />
+              <img src="./images/flexiwheel screenshot.png" alt="flexiwheel" />
             </div>
-            <h2>Flexiwheels</h2>
-            <p>
-              A car rental website where you can book a car for your trip. A cars page with variety of cars and a booking page to  book a car for trip.
+            <h2 class="project-title">Flexiwheels</h2>
+            <p class="project-description">
+              A car rental website where you can book a car for your trip. A
+              cars page with variety of cars and a booking page to book a car
+              for trip.
             </p>
-            <p>Tech Used: JavaScript, CSS, HTML</p>
+            <p class="project-tech-stack">Tech Used: JavaScript, CSS, HTML</p>
             <div class="Live-and-github-btn-div">
-              <a href="https://github.com/akshaychavan010101/fearful-doll-6867" target="_blank">GitHub</a>
-              <a href="https://sweet-madeleine-db3b7d.netlify.app/" target="_blank">Go Live</a>
+              <a
+                href="https://github.com/akshaychavan010101/fearful-doll-6867"
+                target="_blank"
+                class="project-github-link"
+                >GitHub</a
+              >
+              <a
+                href="https://sweet-madeleine-db3b7d.netlify.app/"
+                target="_blank"
+                class="project-deployed-link"
+                >Go Live</a
+              >
             </div>
           </div>
-          <div>
+          <div class="project-card">
             <div>
-              <img
-                src="./images/Medeasyin screenshot.png"
-                alt="Medeasyin"
-              />
+              <img src="./images/Medeasyin screenshot.png" alt="Medeasyin" />
             </div>
-            <h2>MedEasyIn</h2>
-            <p>
-              A healthcare website where you can buy medicines online. It has a medicines page with variety of medicines and a cart page where you can add medicines to your cart. It also has a checkout page.
+            <h2 class="project-title">MedEasyIn</h2>
+            <p class="project-description">
+              A healthcare website to buy medicines online. It has a medicines
+              page with variety of medicines and a cart page where you can add
+              medicines to your cart.
             </p>
-            <p>Tech Used: JavaScript, CSS, HTML</p>
+            <p class="project-tech-stack">Tech Used: JavaScript, CSS, HTML</p>
             <div class="Live-and-github-btn-div">
-              <a href="https://github.com/akshaychavan010101/infamous-account-3056" target="_blank">GitHub</a>
-              <a href="https://astonishing-torrone-0a48f9.netlify.app/" target="_blank">Go Live</a>
+              <a
+                href="https://github.com/akshaychavan010101/infamous-account-3056"
+                target="_blank"
+                class="project-github-link"
+                >GitHub</a
+              >
+              <a
+                href="https://astonishing-torrone-0a48f9.netlify.app/"
+                target="_blank"
+                class="project-deployed-link"
+                >Go Live</a
+              >
             </div>
           </div>
-          <div>
+          <div class="project-card">
             <div>
-              <img
-                src="./images/tryleaf screenshot.png"
-                alt="TryLeaf"
-              />
+              <img src="./images/tryleaf screenshot.png" alt="TryLeaf" />
             </div>
-            <h2>TryLeaf</h2>
-            <p>
-             A fashion store website where you can buy clothes online. It has a products page with variety of clothes and a cart page where you can add clothes to your cart.
+            <h2 class="project-title">TryLeaf</h2>
+            <p class="project-description">
+              A fashion store website to buy clothes online. It has a products
+              page with variety of clothes and a cart page where you can add
+              clothes to your cart.
             </p>
-            <p>Tech Used: JavaScript, CSS, HTML, Node.js, Express.js, Mongoose, MongoDB</p>
+            <p class="project-tech-stack">
+              Tech Used: JavaScript, CSS, HTML, Node.js, Express.js, Mongoose,
+              MongoDB
+            </p>
             <div class="Live-and-github-btn-div">
-              <a href="https://github.com/akshaychavan010101/average-cat-1068" target="_blank">GitHub</a>
-              <a href="https://verdant-kringle-7d68b4.netlify.app/" target="_blank">Go Live</a>
+              <a
+                href="https://github.com/akshaychavan010101/average-cat-1068"
+                target="_blank"
+                class="project-github-link"
+                >GitHub</a
+              >
+              <a
+                href="https://verdant-kringle-7d68b4.netlify.app/"
+                target="_blank"
+                class="project-deployed-link"
+                >Go Live</a
+              >
             </div>
           </div>
-          <div>
+          <div class="project-card">
             <div>
-              <img
-                src="./images/tryleaf screenshot2.png"
-                alt="TryLeaf"
-              />
+              <img src="./images/tryleaf screenshot2.png" alt="TryLeaf" />
             </div>
-            <h2>TryLeaf</h2>
-            <p>
-              A fashion store website where you can buy clothes online. It has a products page with variety of clothes and a cart page where you can add clothes to your cart.
+            <h2 class="project-title">TryLeaf</h2>
+            <p class="project-description">
+              A fashion store website to buy clothes online. It has a products
+              page with variety of clothes and a cart page where you can add
+              clothes to your cart.
             </p>
-            <p>Tech Used: JavaScript, CSS, HTML, Node.js, Express.js, Mongoose, MongoDB</p>
+            <p class="project-tech-stack">
+              Tech Used: JavaScript, CSS, HTML, Node.js, Express.js, Mongoose,
+              MongoDB
+            </p>
             <div class="Live-and-github-btn-div">
-              <a href="https://github.com/akshaychavan010101/average-cat-1068" target="_blank">GitHub</a>
-              <a href="https://verdant-kringle-7d68b4.netlify.app/" target="_blank">Go Live</a>
+              <a
+                href="https://github.com/akshaychavan010101/average-cat-1068"
+                target="_blank"
+                class="project-github-link"
+                >GitHub</a
+              >
+              <a
+                href="https://verdant-kringle-7d68b4.netlify.app/"
+                target="_blank"
+                >Go Live</a
+              >
             </div>
           </div>
         </div>
@@ -202,6 +267,7 @@
         <div class="stats">
           <div>
             <img
+              id="github-stats-card"
               src="https://github-readme-stats.vercel.app/api?username=akshaychavan010101&show_icons=true&locale=en"
               alt="akshaychavan010101"
             />
@@ -221,13 +287,13 @@
             alt="akshaychavan010101"
           />
         </div>
-        <div class="calendar">
+        <div class="react-activity-calendar">
           <!-- calendar loads here -->
         </div>
       </section>
 
       <!-- contact -->
-      <section id="contact">
+      <section id="contact" class="nav-link contact">
         <h2>Contact Me</h2>
         <div id="contact-container">
           <div id="left-contact">
@@ -241,7 +307,7 @@
             <table>
               <tr>
                 <td id="mail-logo"><i class="fa-solid fa-envelope"></i></td>
-                <td>akshaychavan010101@gmail.com</td>
+                <td id="contact-email">akshaychavan010101@gmail.com</td>
               </tr>
               <tr>
                 <td><i class="fa-brands fa-github"></i></td>
@@ -249,7 +315,8 @@
                   <a
                     href="https://github.com/akshaychavan010101"
                     target="_blank"
-                    style="text-decoration-line: none; color: black;"
+                    id="contact-github"
+                    style="text-decoration-line: none; color: black"
                     >akshaychavan010101</a
                   >
                 </td>
@@ -260,14 +327,15 @@
                   <a
                     href="https://www.linkedin.com/in/akshay-chavan-a964a2257/"
                     target="_blank"
-                    style="text-decoration-line: none; color: black;"
+                    id="contact-linkedin"
+                    style="text-decoration-line: none; color: black"
                     >akshay112</a
                   >
                 </td>
               </tr>
               <tr>
                 <td id="phone-logo"><i class="fa-solid fa-phone"></i></td>
-                <td>+91 9373849068</td>
+                <td id="contact-phone">+91 9373849068</td>
               </tr>
               <tr>
                 <td id="location-logo">
@@ -278,37 +346,44 @@
             </table>
           </div>
           <div id="right-contact">
-            <div style="text-align: left; width: 70%; margin: auto">
+            <div>
               <h3>Message me</h3>
             </div>
-            <form onsubmit="sendMail(event)">
-              <div id="contact-name-email-div">
+            <div id="form-container">
+              <form onsubmit="sendMail(event)">
+                <div id="contact-name-email-div">
+                  <input
+                    name="name"
+                    id="name"
+                    type="text"
+                    placeholder="Name"
+                    required
+                  />
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
                 <input
-                  id="name"
+                  name="subject"
                   type="text"
-                  name="name"
-                  placeholder="Name"
+                  placeholder="Subject"
                   required
+                  id="sub-input-bar"
                 />
-                <input type="email" name="email" placeholder="Email" required />
-              </div>
-              <input
-                name="subject"
-                type="text"
-                placeholder="Subject"
-                required
-                id="sub-input-bar"
-              />
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="4"
-                placeholder="Message"
-                required
-              ></textarea>
-              <button type="submit" id="send-btn">Send</button>
-            </form>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="4"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <button type="submit" id="send-btn">Send</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>

@@ -41,7 +41,7 @@ links.forEach((link) => {
 });
 
 // bio text
-const typeText = document.getElementById("bio-text");
+const typeText = document.getElementById("user-detail-intro");
 const text =
   "An Ambitious Node Back End Developer. Have more than 1200 plus hours of coding experience and have the capabilities of writing web pages using both Front End Technologies as well as Back End Technologies. Solved more than 600 Data Structures and Algorithms Questions. Looking for a job opportunity in Technology Driven Organization that will enhance one's Carrier and showcase one's Skills.";
 
@@ -54,7 +54,6 @@ function typing() {
     if (text[i] === " ") {
       br++;
     }
-
     if (br === 10) {
       typeText.innerHTML += `<br>`;
       br = 0;
@@ -96,9 +95,11 @@ resume.forEach((btn) => {
 });
 
 // github calender
-GitHubCalendar(".calendar", "akshaychavan010101", { responsive: true });
+GitHubCalendar(".react-activity-calendar", "akshaychavan010101", {
+  responsive: true,
+});
 
-const calendar = document.querySelector(".calendar");
+const calendar = document.querySelector(".react-activity-calendar");
 calendar.style.backgroundColor = "black";
 calendar.style.borderRadius = "10px";
 calendar.style.padding = "1rem";
@@ -109,7 +110,6 @@ calendar.style.marginTop = "1rem";
 const sendMail = async (event) => {
   event.preventDefault();
   const form = document.querySelector("form");
-  console.log(form);
   let formdata = new FormData(form);
   let actualdata = Object.fromEntries(formdata);
   const { name, email, subject, message } = actualdata;
@@ -120,14 +120,22 @@ const sendMail = async (event) => {
   } else if (!Mailchecker.test(email)) {
     alert("Please enter a valid email");
   } else {
-    const res = await fetch("https://lilac-horse-vest.cyclic.app//sendmail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(actualdata),
-    });
-    const data = await res.json();
-    console.log(data);
+    console.log(actualdata);
+    try {
+      const res = await fetch(
+        "https://eager-red-gaiters.cyclic.app//sendmail",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(actualdata),
+        }
+      );
+      const data = await res.json();
+      alert(data.msg);
+    } catch (error) {
+      alert("Something went wrong");
+    }
   }
 };
