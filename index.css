@@ -67,7 +67,7 @@ nav {
 }
 
 .nav-links li a:hover {
-  color: #dc3a04;
+  color: gold;
 }
 
 /* sections */
@@ -81,11 +81,11 @@ section {
 
 
 #photo-div {
-  width: 32%;
-  /* border: 1px solid red; */
-  border-radius: 50%;
+  width: 30%;
   box-sizing: border-box;
-  background: #e5eaef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -154,21 +154,20 @@ section {
 
 #about-content-div {
   padding: 2rem;
-  width: 100%;
+  width: 106.5%;
   height: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 7px;
-  background-color: white;
+  background-color: rgb(171, 167, 167);
+  box-sizing: border-box;
 }
 
 #photo-div>img {
-  width: 100%;
-  display: block;
-  margin: auto;
+  width: 80%;
   box-sizing: border-box;
+  /* border-radius: 50% */
 }
 
 #photo-div>img:hover {
@@ -178,20 +177,23 @@ section {
 
 #bio-div {
   padding: 2rem;
-  width: 65%;
-  line-height: 2;
-  background-color: #425664;
+  width: 60%;
+  text-align: center;
+  /* background-color: #425664; */
   border-radius: 7px;
-  color: white;
+  color: #1A2238;
 }
 
 #bio-div h2 {
   height: 20%;
+  font-size: 2rem;
 }
 
 #bio-div p {
   text-align: justify;
   font-size: 1.4rem;
+  line-height: 2;
+  font-weight: 500;
   height: 80%;
 }
 
@@ -207,16 +209,19 @@ section {
   font-weight: 100;
   margin: 20px 0;
   color: black;
-  text-decoration-line: underline;
-  text-underline-offset: 1rem;
+  /* text-decoration-line: underline;
+  text-underline-offset: 1rem; */
 }
 
 
 /* skills */
 #skills {
-  background-color: white;
+  background-color: #1c2023;
 }
 
+#skills>h2 {
+  color: white;
+}
 
 #skills-container {
   width: 85%;
@@ -260,8 +265,13 @@ section {
 }
 
 #skills-container>div:nth-child(4) {
-  border: 10px solid black;
+  border: 10px solid rgb(123, 122, 122);
   background-color: rgb(231, 230, 230);
+}
+
+#skills-container>div:nth-child(4)>img {
+  width: 70%;
+  height: 70%;
 }
 
 #skills-container>div:nth-child(5) {
@@ -293,7 +303,13 @@ section {
 
 #skills-container>div:hover {
   transform: scale(1.1);
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.skills-card-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1A2238;
 }
 
 
@@ -562,12 +578,23 @@ textarea {
 }
 
 
+/* footer */
+#footer {
+  background-color: rgb(183, 231, 216);
+  color: black;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 
 /* responsiveness */
 @media screen and (max-width: 768px) {
-  .logo> h1{
+  .logo>h1 {
     font-size: 1.2rem;
   }
+
   .nav-links {
     position: fixed;
     width: 50%;
@@ -608,6 +635,10 @@ textarea {
   .hamburger {
     z-index: 1;
   }
+
+  /* section {
+    padding: 1rem 0;
+  } */
 
   #home {
     height: fit-content
@@ -671,6 +702,10 @@ textarea {
 
   #bio-div {
     width: 100%;
+  }
+
+  #bio-div>p {
+    text-align: justify;
   }
 
   /* skills */
@@ -862,10 +897,10 @@ textarea {
     margin: 0.5rem 0;
     display: block;
   }
-  
+
   #contact-name-email-div input {
     width: 100%;
     margin: 0.5rem 0;
   }
-  
+
 }

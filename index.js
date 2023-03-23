@@ -43,7 +43,7 @@ links.forEach((link) => {
 // bio text
 const typeText = document.getElementById("user-detail-intro");
 const text =
-  "An Ambitious Node Back End Developer. Have more than 1200 plus hours of coding experience and have the capabilities of writing web pages using both Front End Technologies as well as Back End Technologies. Solved more than 600 Data Structures and Algorithms Questions. Looking for a job opportunity in Technology Driven Organization that will enhance one's Carrier and showcase one's Skills.";
+  "An Ambitious Node Back End Developer. Have more than 1200 plus hours of coding experience, 30 weeks of intensive practice at Masai School and have the capabilities of writing web the pages using both Front End Technologies as well as Back End Technologies. Solved more than 600 Data Structures and Algorithms Questions. Looking for a job opportunity in Technology Driven Organization that will enhance one's Carrier and showcase one's Skills.";
 
 let i = 0;
 let br = i;
@@ -69,7 +69,7 @@ const header = document.querySelector("header");
 header.style.transition = "all 0.5s ease";
 
 window.onload = () => {
-  typing();
+  // typing();
   if (window.pageYOffset == 0) {
     header.style.backgroundColor = "transparent";
   } else {
@@ -79,9 +79,12 @@ window.onload = () => {
 
 window.onscroll = () => {
   // console.log(window.pageYOffset);
+  const username = document.getElementById("user-detail-name");
   if (window.pageYOffset > 0) {
+    username.style.display = "block";
     header.style.backgroundColor = "#425664";
   } else {
+    username.style.display = "none";
     header.style.backgroundColor = "transparent";
   }
 };
@@ -139,3 +142,38 @@ const sendMail = async (event) => {
     }
   }
 };
+
+// skills section title 
+const skillsDiv = document.querySelectorAll("#skills-container>div");
+
+const displaySkills = () => {
+  for (let i = 0; i < skillsDiv.length; i++) {
+    let targeted = skillsDiv[i].innerHTML;
+    let skill = "Skill";
+    if (i == 0) {
+      skill = "HTML 5";
+    } else if (i == 1) {
+      skill = "CSS 5";
+    } else if (i == 2) {
+      skill = "Node";
+    } else if (i == 3) {
+      skill = "JavaScript";
+    } else if (i == 4) {
+      skill = "Express";
+    } else if (i == 5) {
+      skill = "Mongoose";
+    } else if (i == 6) {
+      skill = "MongoDB";
+    } else {
+      skill = "MySQL";
+    }
+
+    skillsDiv[i].addEventListener("mouseover", () => {
+      skillsDiv[i].innerHTML = `<h2 class = "skills-card-name">${skill}</h2>`;
+    });
+    skillsDiv[i].addEventListener("mouseout", () => {
+      skillsDiv[i].innerHTML = targeted;
+    });
+  }
+};
+displaySkills();
