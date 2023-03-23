@@ -169,7 +169,7 @@ const displaySkills = () => {
     }
 
     skillsDiv[i].addEventListener("mouseover", () => {
-      skillsDiv[i].innerHTML = `<h2 class = "skills-card-name">${skill}</h2>`;
+      skillsDiv[i].innerHTML = `<h2 class = "skills-name">${skill}</h2>`;
     });
     skillsDiv[i].addEventListener("mouseout", () => {
       skillsDiv[i].innerHTML = targeted;
