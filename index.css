@@ -205,8 +205,8 @@ section {
   color: #1A2238;
 }
 
-#bio-div h2 {
-  height: 20%;
+#bio-div > h2 {
+  height: 15%;
   font-size: 2rem;
 }
 
@@ -215,7 +215,7 @@ section {
   font-size: 1.4rem;
   line-height: 2;
   font-weight: 500;
-  height: 80%;
+  height: 85%;
 }
 
 
