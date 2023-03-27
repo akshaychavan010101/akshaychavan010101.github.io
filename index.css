@@ -82,6 +82,9 @@ section {
 
 #photo-div {
   width: 30%;
+  border: 20px solid gray;
+  border-radius: 50%;
+  background-color: #425664;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -164,10 +167,29 @@ section {
   box-sizing: border-box;
 }
 
+
+#photo-div {
+  width: 30%;
+  border: 20px solid gray;
+  border-radius: 50%;
+  background-color: #425664;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bio-div {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
 #photo-div>img {
   width: 80%;
   box-sizing: border-box;
-  /* border-radius: 50% */
 }
 
 #photo-div>img:hover {
@@ -179,7 +201,6 @@ section {
   padding: 2rem;
   width: 60%;
   text-align: center;
-  /* background-color: #425664; */
   border-radius: 7px;
   color: #1A2238;
 }
@@ -207,10 +228,8 @@ section {
   text-align: center;
   font-size: 3rem;
   font-weight: 100;
-  margin: 20px 0;
+  margin: 0.5rem 0;
   color: black;
-  /* text-decoration-line: underline;
-  text-underline-offset: 1rem; */
 }
 
 
@@ -597,27 +616,33 @@ textarea {
 
   .nav-links {
     position: fixed;
-    width: 50%;
-    height: 85vh;
-    margin-left: 50%;
+    width: 60%;
+    height: 86vh;
+    margin-left: 41%;
     top: 0.0rem;
     left: 100%;
     background: white;
     flex-direction: column;
     transition: all 0.6s ease-in-out;
+    border-radius: 7px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
   .nav-links li {
     height: 10%;
     width: 90%;
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
     list-style: none;
     text-align: left;
   }
 
   .nav-links li a {
     font-size: 1.2rem;
+    width: 100%;
     color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .nav-links.show {
@@ -640,9 +665,9 @@ textarea {
     padding: 1rem 0;
   } */
 
-  #home {
+  /* #home {
     height: fit-content
-  }
+  } */
 
   #home-container {
     flex-direction: column;
@@ -652,6 +677,7 @@ textarea {
 
   #home>div {
     margin-top: 5rem;
+    line-height: 2;
   }
 
   #home>div>h3 {
@@ -680,13 +706,12 @@ textarea {
     margin-top: 2rem;
   }
 
-  #about>h2 {
+  #about>div>h2 {
     text-align: center;
-    font-size: 3rem;
-    font-weight: 100;
-    margin: 2px 0;
-    text-decoration-line: underline;
-    text-underline-offset: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+
   }
 
 
@@ -787,17 +812,13 @@ textarea {
 
 
   #project-card-div {
+    display: block;
     width: 100%;
-    grid-template-columns: repeat(1, 80%);
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
   }
 
 
   #project-card-div>div {
     height: 550px;
-    ;
     background-color: #1A2238;
     display: flex;
     flex-direction: column;
@@ -806,12 +827,17 @@ textarea {
     padding: 1rem;
     margin: auto;
     color: white;
+    margin: 1rem 0;
     box-sizing: border-box;
     line-height: 2;
     text-align: center;
   }
 
-
+  #stats-heading {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 2px 0;
+  }
 
   .stats {
     width: 90%;
@@ -854,7 +880,7 @@ textarea {
     margin: auto;
     padding: 0;
     border-right: none;
-    line-height: 3;
+    line-height: 2;
   }
 
 
@@ -862,12 +888,12 @@ textarea {
     width: 100%;
   }
 
-  #mail-logo,
+  /* #mail-logo,
   #linkdin-logo,
   #phone-logo,
   #location-logo {
-    font-size: 0.5rem;
-  }
+    font-size: 0;
+  } */
 
   #left-contact table {
     width: 100%;
@@ -903,4 +929,77 @@ textarea {
     margin: 0.5rem 0;
   }
 
+}
+
+@media screen and (max-width : 667px) {
+  header {
+    width: 100%;
+    padding: 0.7rem;
+  }
+
+  section {
+    padding: 0;
+  }
+
+  #about>h2,
+  #skills>h2,
+  #projects>h2,
+  #contact>h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 20px 0;
+    color: black;
+  }
+
+  #skills>h2 {
+    color: white;
+  }
+
+
+  #form-container>form {
+    width: 100%;
+  }
+
+  #about-content-div {
+    padding: 1rem 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #bio-div p {
+    font-size: 1rem;
+  }
+
+  #left-contact>div>h3 {
+    font-size: 1rem;
+  }
+
+  #left-contact>table {
+    margin: 3rem 0;
+  }
+
+  #left-contact>table>tbody>tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+
+  #skills-container {
+    grid-template-columns: repeat(2, 120px);
+  }
+
+
+
+
+
+  #contact-name-email-div,
+  #sub-input-bar,
+  textarea,
+  #send-btn {
+    width: 100%;
+  }
 }
