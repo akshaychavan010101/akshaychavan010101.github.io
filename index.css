@@ -80,18 +80,6 @@ section {
 }
 
 
-#photo-div {
-  width: 30%;
-  border: 20px solid gray;
-  border-radius: 50%;
-  background-color: #425664;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
 /* home */
 #home {
   background: url("./images/back2.webp");
@@ -168,16 +156,7 @@ section {
 }
 
 
-#photo-div {
-  width: 30%;
-  border: 20px solid gray;
-  border-radius: 50%;
-  background-color: #425664;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 #bio-div {
   padding: 0;
@@ -186,8 +165,19 @@ section {
   justify-content: space-around;
 }
 
+#photo-div {
+  width: 30%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
 
 #photo-div>img {
+  border: 3px solid  rgb(120, 119, 119);
+  border-radius: 50%;
   width: 80%;
   box-sizing: border-box;
 }
@@ -616,16 +606,13 @@ textarea {
 
   .nav-links {
     position: fixed;
-    width: 60%;
-    height: 86vh;
-    margin-left: 41%;
+    width: 100%;
+    height: 100vh;
     top: 0.0rem;
     left: 100%;
-    background: white;
     flex-direction: column;
     transition: all 0.6s ease-in-out;
-    border-radius: 7px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: rgb(66, 86, 100);
   }
 
   .nav-links li {
@@ -641,8 +628,7 @@ textarea {
   .nav-links li a {
     font-size: 1.2rem;
     width: 100%;
-    color: black;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
   }
 
   .nav-links.show {
@@ -862,6 +848,10 @@ textarea {
   .stats>div>img {
     width: 100%;
   }
+  #github-top-langs{
+    width: 100%;
+    height: 100%;
+    }
 
   /*  contact */
   #contact {
