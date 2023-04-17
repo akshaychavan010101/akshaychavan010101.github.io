@@ -208,6 +208,9 @@ section {
   height: 85%;
 }
 
+.title{
+  display: none;
+}
 
 
 /* headings of all sections */
