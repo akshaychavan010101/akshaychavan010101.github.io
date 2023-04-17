@@ -10,7 +10,7 @@ header {
   top: 0;
   width: 100%;
   background-color: #425664;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
   z-index: 1;
   /* height: fit-content; */
 }
@@ -138,12 +138,15 @@ section {
 
 /* about */
 #about {
-  background: #F6F4F2;
-  justify-content: center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  padding: 0;
 }
 
-#about-content-div {
+/* #about-content-div {
   padding: 2rem;
   width: 106.5%;
   height: 80%;
@@ -210,11 +213,65 @@ section {
 
 .title{
   display: none;
+} */
+
+
+.max-width{
+    height: 100%;
+    background-color: rgb(171, 167, 167);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.title{
+  width: 90%;
+  height: 15%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+.about-content{
+  border-top: none;
+  border-left: none;
+  width: 95%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  padding: 1rem;
+  background: linear-gradient(to left, white, rgb(211, 209, 209)) ;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.right{
+  width: 65%;
+}
+
+.left{
+ width: 30%;
+}
+
+.left img{
+  width: 80%;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+#user-detail-name{
+  font-size: 2rem;
+}
+
+#user-detail-intro{
+  color: rgb(53, 46, 2);
+  font-size: 1.2rem;
+}
 
 /* headings of all sections */
-#about>h2,
 #skills>h2,
 #projects>h2,
 #contact>h2 {
@@ -236,8 +293,8 @@ section {
 }
 
 #skills-container {
-  width: 85%;
-  height: 90%;
+  width: 100%;
+  height: 85%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 180px);
@@ -687,47 +744,46 @@ textarea {
 
   /* about */
   #about {
-    height: fit-content;
+    height: 100vh;
+    padding:0.5rem 0;
+    justify-content: none;
   }
 
-  #about-content-div {
-    height: fit-content;
-    flex-direction: column;
-    justify-content: center;
+  .title{
+    border: 1px solid;
+    font-size: 1.2rem;
+    height: 5%;
+  }
+
+  .about-content{
+    display: flex;
+    height: 85%;
+    flex-direction:column-reverse;
     align-items: center;
-    margin-top: 2rem;
+    justify-content: space-around;
+    padding: 0.5rem 0;
   }
-
-  #about>div>h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 500;
-    margin: 1rem 0;
-
-  }
-
-
-  #photo-div {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 1rem;
-  }
-
-  #photo-div img {
+  .right{
     width: 100%;
+    height: 75%;
+    padding: 0 0.5rem;
   }
-
-  #bio-div {
-    width: 100%;
+  .left{
+   width: 40%;
+   height: 25%;
   }
-
-  #bio-div>p {
+  
+  #user-detail-intro{
+    font-size: 1rem;
     text-align: justify;
   }
-
+  #user-detail-name{
+    font-size: 1.2rem;
+    text-align: center;
+  }
   /* skills */
   #skills {
-    height: fit-content;
+    height: 100vh;
   }
 
   #skills-container {
