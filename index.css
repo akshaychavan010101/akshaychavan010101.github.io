@@ -57,6 +57,7 @@ nav {
 }
 
 .nav-links li a {
+  white-space: nowrap;
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -384,6 +385,10 @@ section {
   display: none;
 }
 
+.project-tech-stack{
+  font-weight: bold;
+  color: gold;
+}
 
 /* projects */
 #projects {
