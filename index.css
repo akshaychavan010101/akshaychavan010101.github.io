@@ -147,75 +147,6 @@ section {
   padding: 0;
 }
 
-/* #about-content-div {
-  padding: 2rem;
-  width: 106.5%;
-  height: 80%;
-  display: flex;
-  justify-content: space-around;
-  box-sizing: border-box;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: rgb(171, 167, 167);
-  box-sizing: border-box;
-}
-
-
-
-
-#bio-div {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-#photo-div {
-  width: 30%;
-  border-radius: 50%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-}
-
-#photo-div>img {
-  border: 3px solid  rgb(120, 119, 119);
-  border-radius: 50%;
-  width: 80%;
-  box-sizing: border-box;
-}
-
-#photo-div>img:hover {
-  transition: all 0.5s ease-in-out;
-  transform: scale(0.97);
-}
-
-#bio-div {
-  padding: 2rem;
-  width: 60%;
-  text-align: center;
-  border-radius: 7px;
-  color: #1A2238;
-}
-
-#bio-div > h2 {
-  height: 15%;
-  font-size: 2rem;
-}
-
-#bio-div p {
-  text-align: justify;
-  font-size: 1.4rem;
-  line-height: 2;
-  font-weight: 500;
-  height: 85%;
-}
-
-.title{
-  display: none;
-} */
-
 
 .max-width{
     height: 100%;
@@ -227,7 +158,7 @@ section {
 }
 .title{
   width: 90%;
-  height: 15%;
+  height: fit-content;
   margin: auto;
   display: flex;
   align-items: center;
@@ -239,7 +170,7 @@ section {
   border-top: none;
   border-left: none;
   width: 95%;
-  height: 70%;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -397,20 +328,21 @@ section {
   height: fit-content;
 }
 
-#project-card-div {
+
+
+#project-card-div{
   display: grid;
-  height: fit-content;
-  width: 100%;
-  grid-template-columns: repeat(4, 24%);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   margin: auto;
-  gap: 1rem;
+  width: 80%;
+  height: fit-content;
   justify-content: center;
   align-items: center;
 }
 
 #project-card-div>div {
   height: 550px;
-  background-color: #1A2238;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -421,8 +353,10 @@ section {
   box-sizing: border-box;
   line-height: 2;
   text-align: center;
+  background-color: #000000;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
 
 #project-card-div>div:hover {
   transform: scale(1.04);
@@ -434,7 +368,7 @@ section {
 #project-card-div>div>div>img {
   border: 5px solid rgb(249, 90, 42);
   border-radius: 5px;
-  width: 70%;
+  width: 60%;
   display: block;
   margin: auto;
   border-radius: 7px;
@@ -715,14 +649,7 @@ textarea {
     z-index: 1;
   }
 
-  /* section {
-    padding: 1rem 0;
-  } */
-
-  /* #home {
-    height: fit-content
-  } */
-
+  
   #home-container {
     flex-direction: column;
     justify-content: center;
@@ -755,30 +682,28 @@ textarea {
   }
 
   .title{
-    border: 1px solid;
     font-size: 1.2rem;
-    height: 5%;
   }
 
   .about-content{
     display: flex;
-    height: 85%;
+    height: fit-content;
     flex-direction:column-reverse;
     align-items: center;
     justify-content: space-around;
-    padding: 0.5rem 0;
   }
   .right{
     width: 100%;
-    height: 75%;
+    height: 60%;
     padding: 0 0.5rem;
   }
   .left{
    width: 40%;
-   height: 25%;
+   height: 35%;
   }
   
   #user-detail-intro{
+    margin-top: 1rem;
     font-size: 1rem;
     text-align: justify;
   }
@@ -788,7 +713,7 @@ textarea {
   }
   /* skills */
   #skills {
-    height: 100vh;
+    padding-bottom: 1rem;
   }
 
   #skills-container {
@@ -859,19 +784,18 @@ textarea {
   /* project */
 
   #project {
-    height: fit-content;
+    /* height: fit-content; */
     padding: 0;
   }
 
 
   #project-card-div {
     display: block;
-    width: 100%;
+    width: 80%;
   }
 
 
   #project-card-div>div {
-    height: 550px;
     background-color: #1A2238;
     display: flex;
     flex-direction: column;
@@ -883,6 +807,10 @@ textarea {
     margin: 1rem 0;
     box-sizing: border-box;
     line-height: 2;
+    text-align: justify;
+  }
+
+  .project-tech-stack{
     text-align: center;
   }
 
@@ -988,7 +916,7 @@ textarea {
 
 }
 
-@media screen and (max-width : 667px) {
+@media screen and (max-width : 680px) {
   header {
     width: 100%;
     padding: 0.7rem;
@@ -1018,11 +946,28 @@ textarea {
     width: 100%;
   }
 
+  #about{
+    height: fit-content;
+  }
+
   #about-content-div {
     padding: 1rem 0.5rem;
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.9rem;;
   }
+
+  .about-content{
+    box-sizing: border-box;
+  }
+
+  .right{
+    height: 80%;
+  }
+
+  #user-detail-intro{
+    font-size: 0.9rem;
+  }
+
 
   #bio-div p {
     font-size: 1rem;
