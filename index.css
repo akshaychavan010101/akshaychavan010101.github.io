@@ -317,7 +317,7 @@ section {
 }
 
 .project-tech-stack{
-  font-weight: bold;
+  font-weight: 500;
   color: gold;
 }
 
@@ -352,7 +352,7 @@ section {
   color: white;
   box-sizing: border-box;
   line-height: 2;
-  text-align: center;
+  text-align: left;
   background-color: #000000;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -360,7 +360,7 @@ section {
 
 #project-card-div>div:hover {
   transform: scale(1.04);
-  background-color: #5d7688;
+  background-color: rgb(66, 86, 100);
   transition: all 0.5s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -378,9 +378,10 @@ section {
 .Live-and-github-btn-div {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 0;
   margin: 0.3rem;
   width: 100%;
+  white-space: nowrap;
 }
 
 .Live-and-github-btn-div>a {
@@ -796,6 +797,7 @@ textarea {
 
 
   #project-card-div>div {
+    height: fit-content;
     background-color: #1A2238;
     display: flex;
     flex-direction: column;
