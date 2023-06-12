@@ -1,454 +1,1351 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akshay Chavan Portfolio</title>
+    <title>Akshay Chavan</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
     <!-- add logo -->
-    <link rel="icon" href="./images/Profile Photo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+      rel="icon"
+      href="images/Round Profile.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- github stats -->
+
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
     <link
       rel="stylesheet"
       href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
     />
-    <script
-      src="https://kit.fontawesome.com/5cb8a0be4f.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- sweet alert -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sweetalert/dist/sweetalert.css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
-  <body>
-    <header>
-      <nav id="nav-menu">
-        <div class="logo">
-          <h1 id="user-detail-name">AKSHAY CHAVAN</h1>
-        </div>
-        <div class="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT ME</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li id="#projects"><a href="#projects">PROJECTS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-          <li class="resume-btn-bar nav-link resume" id="resume-button-1">
-            <a
-              href="./images/Akshay-Chavan-Resume.pdf"
-              download="Akshay-Chavan-Resume"
-              id="resume-link-1"
-              >RESUME <i class="fa-solid fa-download"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <!-- home -->
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#home-section">Akshay<span>.</span></a>
+        <button
+          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
 
-      <section id="home" class="nav-link home">
-        <div>
-          <h3>
-            <img
-              src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
-              width="35"
-            />
-            Hello, I'm a
-          </h3>
-          <h1>Full Stack Web Developer</h1>
-          <a
-            href="./images/Akshay-Chavan-Resume.pdf"
-            download="Akshay-Chavan-Resume"
-            class="resume-btn-bar nav-link resume"
-            id="resume-button-2"
-            >RESUME</a
-          >
-        </div>
-      </section>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link"><span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link"><span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills-section" class="nav-link"><span>Skills</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#services-section" class="nav-link"
+                ><span>Services</span></a
+              >
+            </li>
 
-      <!-- about -->
-      <section class="nav-link about section" id="about">
-        <div class="max-width">
-          <h2 class="title">About me</h2>
-          <div class="about-content">
-            <div class="column right">
-              <div id="user-detail-name" class="text">
-                I'm Akshay Chavan<span class="typing-2"></span>
-              </div>
-              <p id="user-detail-intro" class="mydatatext">
-                An Ambitious Full Stack Web Developer. Have more than 1200 plus
-                hours of coding experience, 30 weeks of intensive practice and
-                have the capabilities of writing web the pages using both Front
-                End technologies such as HTML, CSS and JavaScript as well as
-                Back End technologies such as Node, Express, Mongoose, MongoDB.
-                Solved more than 600 Data Structures and Algorithms Questions.
-                Looking for a job opportunity in Technology Driven Organization.
-              </p>
-            </div>
-            <div class="column left">
-              <img class="home-img" src="./images/Profile Photo.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- <section id="about" class="nav-link about">
-        <div id="about-content-div">
-          <div id="photo-div">
-            <img
-            src="./images/Profile Photo.png"
-            class="home-img"
-            alt="Error"
-            />
-          </div>
-          <div id="bio-div">
-            <h2>About me</h2>
-            <div class="title">Title</div> 
-            <p id="user-detail-intro" class="about-section">
-              An Ambitious Full Stack Web Developer. Have more than 1200 plus
-              hours of coding experience, 30 weeks of intensive practice and have the capabilities of writing web the pages using both Front End technologies such as HTML, CSS and JavaScript as well as Back End technologies such as Node, Express, Mongoose, MongoDB. Solved more than 600 Data Structures and Algorithms Questions. Looking for a job opportunity in Technology Driven Organization.
-            </p>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- skills -->
-      <section id="skills" class="nav-link skills">
-        <h2>Skills</h2>
-        <div id="skills-container">
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              id="HTML 5"
-              src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"
-              alt=""
-            />
-            <span class="skills-card-name">.</span>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              id="CSS 5"
-              src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg"
-              alt=""
-            />
-            <span class="skills-card-name">.</span>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              id="Node"
-              src="./images/nodejsLogo.png"
-              alt=""
-            />
-            <span class="skills-card-name">.</span>
-          </div>
-
-          <div class="skills-card">
-            <img
-              id="JavaScript"
-              class="skills-card-img"
-              src="https://i0.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500&ssl=1&w=640"
-              alt=""
-            />
-            <span class="skills-card-name">.</span>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              id="Express"
-              src="./images/express logo.png"
-              alt=""
-            />
-            <span class="skills-card-name">.</span>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              id="Mongoose"
-              src="./images/mongoose Logo.png"
-              alt=""
-            />
-            <span class="skills-card-name">.</span>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              id="MongoDB"
-              src="./images/mongoDBLogo.png"
-              alt=""
-            />
-            <span class="skills-card-name">.</span>
-          </div>
-          <div class="skills-card">
-            <img
-              class="skills-card-img"
-              id="MySQL"
-              src="./images/mysql.svg"
-              alt=""
-            />
-            <span class="skills-card-name">.</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- projects -->
-      <section id="projects">
-        <h2>Projects</h2>
-        <div id="project-card-div" class="nav-link projects">
-          <div class="project-card">
-            <div>
-              <img src="./images/Findmydoc screenshot.png" alt="Findmydoc" />
-            </div>
-            <h2 class="project-title">FindMyDoc</h2>
-            <p class="project-description">
-              An online appointment booking system designed for healthcare
-              professionals and their patients to book appointments with doctors
-              and other healthcare providers.
-            </p>
-            <p class="project-tech-stack">
-              Tech Used: JavaScript, TypeScript, SQL, React.js, Vite, Node.js,
-              Express.js
-            </p>
-            <div class="Live-and-github-btn-div">
-              <a
-                href="https://github.com/akshaychavan010101/Hospital-Booking-App"
-                target="_blank"
-                class="project-github-link"
-                ><i class="fa-brands fa-github"></i> GitHub</a
+            <li class="nav-item">
+              <a href="#education-section" class="nav-link"
+                ><span>Education</span></a
               >
-              <a
-                class="project-deployed-link"
-                href="https://findmydoctorapp.netlify.app/"
-                target="_blank"
-                ><i class="fa-solid fa-globe"></i>  Go Live</a
+            </li>
+            <li class="nav-item">
+              <a href="#projects-section" class="nav-link"
+                ><span>Projects</span></a
               >
-            </div>
-          </div>
-          <div class="project-card">
-            <div>
-              <img src="./images/tryleaf screenshot.png" alt="TryLeaf" />
-            </div>
-            <h2 class="project-title">TryLeaf</h2>
-            <p class="project-description">
-              A fashion store website to buy clothes online. It has a products
-              page with variety of clothes and a cart page where you can add
-              clothes to your cart.
-            </p>
-            <p class="project-tech-stack">
-              Tech Used: CSS, HTML,JavaScript, Node.js, Express.js, MongoDB
-            </p>
-            <div class="Live-and-github-btn-div">
-              <a
-                href="https://github.com/akshaychavan010101/average-cat-1068"
-                target="_blank"
-                class="project-github-link"
-                ><i class="fa-brands fa-github"></i>  GitHub</a
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link"
+                ><span>Contact</span></a
               >
+            </li>
+            <li>
               <a
-                class="project-deployed-link"
-                href="https://verdant-kringle-7d68b4.netlify.app/"
+                href="./images/Akshay-Chavan-Resume.pdf"
+                class="btn btn-primary btn-outline-primary resume-btn-bar"
+                download="Akshay-Chavan-Resume"
                 target="_blank"
-                ><i class="fa-solid fa-globe"></i>  Go Live</a
+                >Resume</a
               >
-            </div>
-          </div>
-          <div class="project-card">
-            <div>
-              <img src="./images/flexiwheel screenshot.png" alt="flexiwheel" />
-            </div>
-            <h2 class="project-title">Flexiwheels</h2>
-            <p class="project-description">
-              A car rental website where you can book a car for your trip. A
-              cars page with variety of cars and a booking page to book a car
-              for trip.
-            </p>
-            <p class="project-tech-stack">Tech Used: CSS, HTML,JavaScript</p>
-            <div class="Live-and-github-btn-div">
-              <a
-                href="https://github.com/akshaychavan010101/fearful-doll-6867"
-                target="_blank"
-                class="project-github-link"
-                ><i class="fa-brands fa-github"></i>  GitHub</a
-              >
-              <a
-                class="project-deployed-link"
-                href="https://sweet-madeleine-db3b7d.netlify.app/"
-                target="_blank"
-                ><i class="fa-solid fa-globe"></i>  Go Live</a
-              >
-            </div>
-          </div>
-          <div class="project-card">
-            <div>
-              <img src="./images/Medeasyin screenshot.png" alt="Medeasyin" />
-            </div>
-            <h2 class="project-title">MedEasyIn</h2>
-            <p class="project-description">
-              A healthcare website to buy medicines online. It has a medicines
-              page with variety of medicines and a cart page where you can add
-              medicines to your cart.
-            </p>
-            <p class="project-tech-stack">Tech Used: CSS, HTML,JavaScript</p>
-            <div class="Live-and-github-btn-div">
-              <a
-                href="https://github.com/akshaychavan010101/infamous-account-3056"
-                target="_blank"
-                class="project-github-link"
-                ><i class="fa-brands fa-github"></i>  GitHub</a
-              >
-              <a
-                class="project-deployed-link"
-                href="https://astonishing-torrone-0a48f9.netlify.app/"
-                target="_blank"
-                ><i class="fa-solid fa-globe"></i>  Go Live</a
-              >
-            </div>
-          </div>
-        </div>
-        <div id="stats-heading">
-          <h3>Stats</h3>
-        </div>
-        <div class="stats">
-          <div>
-            <img
-              id="github-stats-card"
-              src="https://github-readme-stats.vercel.app/api?username=akshaychavan010101&show_icons=true&locale=en"
-              alt="akshaychavan010101"
-            />
-          </div>
-          <div>
-            <img
-              id="github-streak-stats"
-              src="https://github-readme-streak-stats.herokuapp.com?user=akshaychavan010101"
-              alt="akshaychavan010101"
-            />
-          </div>
-        </div>
-        <div class="stats">
-          <img
-            id="github-top-langs"
-            src="https://github-readme-stats.vercel.app/api/top-langs?username=akshaychavan010101&show_icons=true&locale=en&layout=compact"
-            alt="akshaychavan010101"
-          />
-        </div>
-        <div class="react-activity-calendar">
-          <!-- calendar loads here -->
-        </div>
-      </section>
-
-      <!-- contact -->
-      <section id="contact" class="nav-link contact">
-        <h2>Contact Me</h2>
-        <div id="contact-container">
-          <div id="left-contact">
-            <div>
-              <h3>Want to get in touch? Look below</h3>
-              <p>
-                Got a project? Reach out and let's work together on something
-                exciting. Big or small. Mobile or web.
-              </p>
-            </div>
-            <table>
-              <tr>
-                <td id="mail-logo"><i class="fa-solid fa-envelope"></i></td>
-                <td id="contact-email">akshaychavan010101@gmail.com</td>
-              </tr>
-              <tr>
-                <td><i class="fa-brands fa-github"></i></td>
-                <td>
-                  <a
-                    href="https://github.com/akshaychavan010101"
-                    target="_blank"
-                    id="contact-github"
-                    style="text-decoration-line: none; color: black"
-                    >akshaychavan010101</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td id="linkdin-logo"><i class="fa-brands fa-linkedin"></i></td>
-                <td>
-                  <a
-                    href="https://www.linkedin.com/in/akshay-chavan-a964a2257/"
-                    target="_blank"
-                    id="contact-linkedin"
-                    style="text-decoration-line: none; color: black"
-                    >akshay112</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td id="phone-logo"><i class="fa-solid fa-phone"></i></td>
-                <td id="contact-phone">+91 9373849068</td>
-              </tr>
-              <tr>
-                <td id="location-logo">
-                  <i class="fa-sharp fa-solid fa-location-dot"></i>
-                </td>
-                <td>Sambhajinagar,MH</td>
-              </tr>
-            </table>
-          </div>
-          <div id="right-contact">
-            <div>
-              <h3>Message me</h3>
-            </div>
-            <div id="form-container">
-              <form onsubmit="sendMail(event)">
-                <div id="contact-name-email-div">
-                  <input
-                    name="name"
-                    id="name"
-                    type="text"
-                    placeholder="Name"
-                    required
-                  />
-                  <input
-                    name="email"
-                    type="email"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-                <input
-                  name="subject"
-                  type="text"
-                  placeholder="Subject"
-                  required
-                  id="sub-input-bar"
-                />
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="4"
-                  placeholder="Message"
-                  required
-                ></textarea>
-                <button type="submit" id="send-btn">Send</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div>
-        <div id="footer">
-          <p>Thank You!</p>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
+    </nav>
 
-    <script src="./index.js"></script>
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container-fluid px-md-0">
+            <div
+              class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+              data-scrollax-parent="true"
+            >
+              <div class="one-third order-md-last img">
+                <div class="overlay"></div>
+                <div class="overlay-1"></div>
+              </div>
+              <div
+                class="one-forth d-flex align-items-center ftco-animate"
+                data-scrollax=" properties: { translateY: '70%' }"
+              >
+                <div class="text">
+                  <span class="subheading">Hello! This is Akshay</span>
+                  <h1 class="mb-4 mt-3">
+                    Creative <span>Full Stack</span> Web Developer
+                  </h1>
+                  <p>
+                    <a href="#contact-section" class="btn btn-primary"
+                      >Hire me</a
+                    >
+                    <a
+                      href="./images/Akshay-Chavan-Resume.pdf"
+                      class="btn btn-primary btn-outline-primary resume-btn-bar"
+                      download="Akshay-Chavan-Resume"
+                      target="_blank"
+                      >Resume</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container-fluid px-md-0">
+            <div
+              class="row d-flex no-gutters slider-text align-items-end justify-content-end"
+              data-scrollax-parent="true"
+            >
+              <div
+                class="one-third order-md-last img"
+                style="background: rgb(237, 236, 235)"
+              >
+                <!-- style="background-image: url(images/gif.gif)" -->
+                <div class="overlay"></div>
+                <div class="overlay-1"></div>
+              </div>
+              <div
+                class="one-forth d-flex align-items-center ftco-animate"
+                data-scrollax=" properties: { translateY: '70%' }"
+              >
+                <div class="text">
+                  <span class="subheading"
+                    >I Can Design &amp; Build Brands</span
+                  >
+                  <h1 class="mb-4 mt-3">
+                    Hi, I am <span>Akshay &</span> This is my favorite work.
+                  </h1>
+                  <p>
+                    <a href="#" class="btn btn-primary">Hire me</a>
+                    <a
+                      href="./images/Akshay-Chavan-Resume.pdf"
+                      class="btn btn-primary btn-outline-primary resume-btn-bar"
+                      download="Akshay-Chavan-Resume"
+                      target="_blank"
+                      >Resume</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-counter img bg-light" id="section-counter">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-3 justify-content-center counter-wrap ftco-animate"
+          >
+            <div class="block-18 d-flex">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <span class="flaticon-suitcase"></span>
+              </div>
+              <div class="text">
+                <strong class="number" data-number="150">0</strong>
+                <span>Small & Big Project</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 justify-content-center counter-wrap ftco-animate"
+          >
+            <div class="block-18 d-flex">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <span class="flaticon-loyalty"></span>
+              </div>
+              <div class="text">
+                <strong class="number" data-number="1200">0</strong>
+                <span>+ Coding Hours</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 justify-content-center counter-wrap ftco-animate"
+          >
+            <div class="block-18 d-flex">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <span class="flaticon-coffee"></span>
+              </div>
+              <div class="text">
+                <strong class="number" data-number="600">0</strong>
+                <span>+ DSA Questions</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 justify-content-center counter-wrap ftco-animate"
+          >
+            <div class="block-18 d-flex">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <span class="flaticon-calendar"></span>
+              </div>
+              <div class="text">
+                <strong class="number">32 Weeks</strong>
+                <span>Intensive Practice</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="ftco-about ftco-section ftco-no-pt ftco-no-pb"
+      id="about-section"
+    >
+      <div class="container">
+        <div class="row d-flex no-gutters">
+          <div class="col-md-6 col-lg-5 d-flex">
+            <div class="img-about img d-flex align-items-stretch">
+              <div class="overlay"></div>
+              <div
+                class="img d-flex align-self-stretch align-items-center"
+                style="background-image: url(images/author.png)"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
+            <div class="py-md-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate">
+                  <span class="subheading">My Intro</span>
+                  <h2
+                    class="mb-4"
+                    style="font-size: 34px; text-transform: capitalize"
+                  >
+                    About Me
+                  </h2>
+                  <p>
+                    An Ambitious Full Stack Web Developer. Have more than 1200
+                    hours of coding experience, 32 weeks of intensive practice
+                    and is capable of writing the web pages using both Front End
+                    technologies such as HTML, CSS and JavaScript as well as
+                    Back End technologies such as Node, Express, Mongoose,
+                    MongoDB. Solved more than 600 Data Structures and Algorithms
+                    Questions. Looking for a job opportunity in Technology
+                    Driven Organization.
+                  </p>
+
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                    <li class="d-flex">
+                      <span>Name:</span> <span>Akshay Chavan</span>
+                    </li>
+                    <li class="d-flex">
+                      <span>Address:</span>
+                      <span>Sambhajinagar, MH</span>
+                    </li>
+                    <li class="d-flex">
+                      <span>Zip code:</span> <span>431103</span>
+                    </li>
+                    <li class="d-flex">
+                      <span>Email:</span>
+                      <span>akshaychavan010101@gmail.com</span>
+                    </li>
+                    <li class="d-flex">
+                      <span>Phone: </span> <span>+91 9373849068</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-12">
+                  <div class="my-interest d-lg-flex w-100">
+                    <div class="interest-wrap d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="flaticon-listening"></span>
+                      </div>
+                      <div class="text">Music</div>
+                    </div>
+                    <div class="interest-wrap d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="flaticon-suitcases"></span>
+                      </div>
+                      <div class="text">Travel</div>
+                    </div>
+                    <div class="interest-wrap d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="flaticon-video-player"></span>
+                      </div>
+                      <div class="text">Movie</div>
+                    </div>
+                    <div class="interest-wrap d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="flaticon-football"></span>
+                      </div>
+                      <div class="text">Sports</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light" id="skills-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <span class="subheading">Skills</span>
+            <h2 class="mb-4">My Skills</h2>
+            <p>I am good at handling the following technologies.</p>
+          </div>
+        </div>
+        <div class="row progress-circle mb-5">
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">CSS</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/css-logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">HTML</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/html_logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">JavaScript</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/javascript-logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">Express.js</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/express-logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">Node.js</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/node-logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">MongoDB</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/mongodb-logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">MySQL</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/mysql-logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">Redis</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/redis-logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">AWS(Basic)</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/aws-logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">React(Basic)</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/react-logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">Web Socket</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/websocket-logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h2 class="h5 font-weight-bold text-center mb-4">Postman</h2>
+
+              <!-- Progress bar 1 -->
+              <div class="progress mx-auto">
+                <img src="./images/postman-logo.png" alt="Node" />
+              </div>
+              <!-- END -->
+
+              <!-- Demo info -->
+              <div class="row text-center mt-4"></div>
+              <!-- END -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section" id="services-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+            <span class="subheading">I am good at</span>
+            <h2 class="mb-4">My Services</h2>
+            <p>I build efficient & responsive applications</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate"
+            >
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="flaticon-3d-design"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Web Design</h3>
+                <p>
+                  I have a good understanding of HTML and CSS for structuring
+                  web pages and controlling their visuals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate"
+            >
+              <div
+                class="icon shadow d-flex align-items-center justify-content-center"
+              >
+                <span class="flaticon-app-development"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Frameworks</h3>
+                <p>
+                  With 32 weeks of experience, I have good hand on Node.js,
+                  Express.js, React.js, and MongoDB.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate"
+            >
+              <div
+                class="icon shadow d-flex align-items-center justify-content-center"
+              >
+                <span class="flaticon-web-programming"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Responsive Design</h3>
+                <p>
+                  With media queries I create fluid and flexible layouts that
+                  adjust dynamically to fit various viewport sizes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate"
+            >
+              <div
+                class="icon shadow d-flex align-items-center justify-content-center"
+              >
+                <span class="flaticon-branding"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Web Development</h3>
+                <p>
+                  I can build scalable and performant websites using web
+                  technologies, frameworks, and JavaScript.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-hireme">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-8 col-lg-8 d-flex align-items-center">
+            <div class="w-100 py-4">
+              <h2>Have a project on your mind.</h2>
+              <p>
+                Let us together make it real and awesome. Collaborate with me on
+                your next project to make it a success. Leave a message for me
+                in the contact section below. Get My Resume Here.
+              </p>
+              <p class="mb-0">
+                <a
+                  href="./images/Akshay-Chavan-Resume.pdf"
+                  class="btn btn-white py-3 px-4 resume-btn-bar"
+                  download="Akshay-Chavan-Resume"
+                  target="_blank"
+                  >Resume</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- <div class="col-md-4 col-lg-4 d-flex align-items-end">
+            <img src="images/contact-icon.png" class="img-fluid" alt="" />
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light" id="education-section">
+      <div class="container-fluid px-md-4">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <span class="subheading">My Education & Achievements</span>
+            <h2 class="mb-4">Education & Achievements</h2>
+            <p>
+              I hold a Bachelors degree in Arts and I dared to enter the tech
+              industry and completed the Full Stack Web Development Course.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div
+              class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+              style="background-image: url(images/BA.jpg)"
+            >
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3><a href="#">Bachelors of Arts</a></h3>
+                <span>English Literature</span>
+                <span>2019-2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+              style="background-image: url(images/Card.jpg)"
+            >
+              <div class="overlay"></div>
+              <div class="text text-center p-4"></div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+              style="background-image: url(images/ZMC.png)"
+            >
+              <div class="overlay"></div>
+              <div class="text text-center p-4"></div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+              style="background-image: url(images/HackerRank.png)"
+            >
+              <div class="overlay"></div>
+              <div class="text text-center p-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section testimony-section bg-primary">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div
+            class="col-md-12 heading-section heading-section-white text-center ftco-animate"
+          >
+            <span class="subheading">I Aim</span>
+            <h2 class="mb-4">My Future Plans & Objectives</h2>
+            <p>
+              I aspire to become a Full Stack Web Developer and work in a
+              technology driven organization.
+            </p>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <span class="fa fa-quote-left"></span>
+                    <p class="mb-4 pl-5">
+                      Work on projects that will help me grow as a developer, as
+                      a person.
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="background-image: url(images/aim-icon.png)"
+                      ></div>
+                      <!-- <div class="pl-3">
+                        <p class="name">Roger Scott</p>
+                        <span class="position">Marketing Manager</span>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <span class="fa fa-quote-left"></span>
+                    <p class="mb-4 pl-5">
+                      Learn new technologies and frameworks and implement them
+                      in my projects.
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="background-image: url(images/aim-icon.png)"
+                      ></div>
+                      <!-- <div class="pl-3">
+                        <p class="name">Roger Scott</p>
+                        <span class="position">Marketing Manager</span>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <span class="fa fa-quote-left"></span>
+                    <p class="mb-4 pl-5">
+                      Work in a team and learn from my peers and seniors. Take
+                      up leadership roles eventually.
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="background-image: url(images/aim-icon.png)"
+                      ></div>
+                      <!-- <div class="pl-3">
+                        <p class="name">Roger Scott</p>
+                        <span class="position">Marketing Manager</span>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <span class="fa fa-quote-left"></span>
+                    <p class="mb-4 pl-5">
+                      Want to be a part of a company that will help me grow and
+                      will help me achieve my goals.
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="background-image: url(images/aim-icon.png)"
+                      ></div>
+                      <!-- <div class="pl-3">
+                        <p class="name">Roger Scott</p>
+                        <span class="position">Marketing Manager</span>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-project" id="projects-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <span class="subheading">Let Us See My Projects</span>
+            <h2 class="mb-4">Projects</h2>
+            <p>
+              Below are the glimpses of the applications of the skills I have.
+            </p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://findmydoctorapp.netlify.app/"
+                target="_blank"
+                class="block-20"
+                style="background-image: url('images/project_1.png')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <div class="d-flex align-items-center mb-3 meta">
+                  <p class="mb-0">
+                    <span class="mr-2">FINDMYDOC</span>
+                    <a
+                      href="https://findmydoctorapp.netlify.app/"
+                      target="_blank"
+                      class="mr-2"
+                      >Group Project</a
+                    >
+                    <a
+                      href="https://findmydoctorapp.netlify.app/"
+                      class="meta-chat"
+                      target="_blank"
+                      ><span class="icon-chat"></span>5 Days</a
+                    >
+                  </p>
+                </div>
+                <h3 class="heading">
+                  <a href="https://findmydoctorapp.netlify.app/" target="_blank"
+                    >An online appointment booking system designed for
+                    healthcare professionals and their patients to book
+                    appointments with each other.
+                  </a>
+                </h3>
+                <p>
+                  <span class="tech-stacks">CSS</span>
+                  <span class="tech-stacks">JavaScript</span>
+                  <span class="tech-stacks">TypeScript</span>
+                  <span class="tech-stacks">SQL</span>
+                  <span class="tech-stacks">React.js</span>
+                  <span class="tech-stacks">Vite</span>
+                  <span class="tech-stacks">Node.js</span>
+                  <span class="tech-stacks">Express.js</span>
+                </p>
+                <div class="live-and-github-btns">
+                  <a
+                    href="https://findmydoctorapp.netlify.app/"
+                    target="_blank"
+                    class="live-btn"
+                    >Live</a
+                  >
+                  <a
+                    href="https://github.com/akshaychavan010101/Hospital-Booking-App"
+                    target="_blank"
+                    class="github-btn"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://bagelly.netlify.app/index.html"
+                class="block-20"
+                target="_blank"
+                style="background-image: url('images/project_3.png')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <div class="d-flex align-items-center mb-3 meta">
+                  <p class="mb-0">
+                    <span class="mr-2">Bagelly</span>
+                    <a
+                      href="https://bagelly.netlify.app/index.html"
+                      class="mr-2"
+                      target="_blank"
+                      >Solo Project</a
+                    >
+                    <a
+                      href="https://bagelly.netlify.app/index.html"
+                      class="meta-chat"
+                      target="_blank"
+                      ><span class="icon-chat"></span>5 Days</a
+                    >
+                  </p>
+                </div>
+                <h3 class="heading">
+                  <a
+                    href="https://bagelly.netlify.app/index.html"
+                    target="_blank"
+                    >A fashion store website to buy clothes online. It has a
+                    products page with variety of clothes and a cart page where
+                    you can add clothes to your cart.</a
+                  >
+                </h3>
+                <p>
+                  <span class="tech-stacks">HTML</span>
+                  <span class="tech-stacks">CSS</span>
+                  <span class="tech-stacks">JavaScript</span>
+                  <span class="tech-stacks">MongoDB</span>
+                  <span class="tech-stacks">Node.js</span>
+                  <span class="tech-stacks">Express.js</span>
+                </p>
+                <div class="live-and-github-btns">
+                  <a
+                    href="https://bagelly.netlify.app/index.html"
+                    target="_blank"
+                    class="live-btn"
+                    >Live</a
+                  >
+                  <a
+                    href="https://github.com/akshaychavan010101/Souled-Store-Clone"
+                    target="_blank"
+                    class="github-btn"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a
+                href="https://astonishing-torrone-0a48f9.netlify.app/"
+                target="_blank"
+                class="block-20"
+                style="background-image: url('images/project_4.png')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <div class="d-flex align-items-center mb-3 meta">
+                  <p class="mb-0">
+                    <span class="mr-2">Medeasyin</span>
+                    <a
+                      href="https://astonishing-torrone-0a48f9.netlify.app/"
+                      target="_blank"
+                      class="mr-2"
+                      >Solo Project</a
+                    >
+                    <a
+                      href="https://astonishing-torrone-0a48f9.netlify.app/"
+                      target="_blank"
+                      class="meta-chat"
+                      ><span class="icon-chat"></span>5 Days</a
+                    >
+                  </p>
+                </div>
+                <h3 class="heading">
+                  <a
+                    href="https://astonishing-torrone-0a48f9.netlify.app/"
+                    target="_blank"
+                    >A healthcare website to buy medicines online. It has a
+                    medicines page with variety of medicines and a cart page
+                    where you can add medicines to your cart.</a
+                  >
+                </h3>
+                <p>
+                  <span class="tech-stacks">HTML</span>
+                  <span class="tech-stacks">CSS</span>
+                  <span class="tech-stacks">JavaScript</span>
+                  <span class="tech-stacks">Mock API</span>
+                </p>
+                <div class="live-and-github-btns">
+                  <a
+                    href="https://astonishing-torrone-0a48f9.netlify.app/"
+                    target="_blank"
+                    class="live-btn"
+                    >Live</a
+                  >
+                  <a
+                    href="https://github.com/akshaychavan010101/Pharmeasy-clone"
+                    target="_blank"
+                    class="github-btn"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex last-project-div">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+              <a
+                href="https://sweet-madeleine-db3b7d.netlify.app/index.html"
+                target="_blank"
+                class="block-20"
+                style="background-image: url('images/project_2.png')"
+              >
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <div class="d-flex align-items-center mb-3 meta">
+                  <p class="mb-0">
+                    <span class="mr-2">Flexiwheels</span>
+                    <a
+                      href="https://sweet-madeleine-db3b7d.netlify.app/index.html"
+                      target="_blank"
+                      class="mr-2"
+                      >Group Project</a
+                    >
+                    <a
+                      href="https://sweet-madeleine-db3b7d.netlify.app/index.html"
+                      target="_blank"
+                      class="meta-chat"
+                      ><span class="icon-chat"></span>5 Days</a
+                    >
+                  </p>
+                </div>
+                <h3 class="heading">
+                  <a
+                    href="https://sweet-madeleine-db3b7d.netlify.app/index.html"
+                    target="_blank"
+                    >A car rental website where you can book a car for your
+                    trip. A cars page with variety of cars and a booking page to
+                    book a car for trip.</a
+                  >
+                </h3>
+                <p>
+                  <span class="tech-stacks">HTML</span>
+                  <span class="tech-stacks">CSS</span>
+                  <span class="tech-stacks">JavaScript</span>
+                  <span class="tech-stacks">Mock API</span>
+                </p>
+                <div class="live-and-github-btns">
+                  <a
+                    href="https://sweet-madeleine-db3b7d.netlify.app/index.html"
+                    target="_blank"
+                    class="live-btn"
+                    >Live</a
+                  >
+                  <a
+                    href="https://github.com/akshaychavan010101/Zoomcar.com_clone"
+                    target="_blank"
+                    class="github-btn"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="github-stats">
+          <h3>GitHub</h3>
+          <div class="stats">
+            <div>
+              <img
+                id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=akshaychavan010101&show_icons=true&locale=en"
+                alt="akshaychavan010101"
+              />
+            </div>
+            <div>
+              <img
+                id="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com?user=akshaychavan010101"
+                alt="akshaychavan010101"
+              />
+            </div>
+          </div>
+          <div class="stats">
+            <div>
+              <img
+                id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs?username=akshaychavan010101&show_icons=true&locale=en&layout=compact"
+                alt="akshaychavan010101"
+              />
+            </div>
+          </div>
+          <div class="react-activity-calendar">
+            <!-- calendar loads here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="ftco-section contact-section ftco-no-pb"
+      id="contact-section"
+    >
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <span class="subheading">Contact us</span>
+            <h2 class="mb-4">Have a Project?</h2>
+            <p>
+              Connect with me on LinkedIn or send me an email and I will get in
+              touch with you.
+            </p>
+          </div>
+        </div>
+
+        <div class="row block-9">
+          <div class="col-md-8">
+            <form
+              action="#"
+              class="bg-light p-4 p-md-5 contact-form"
+              onsubmit="sendMsgfun(event)"
+            >
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Subject"
+                      name="subject"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea
+                      name="message"
+                      cols="30"
+                      rows="7"
+                      class="form-control"
+                      placeholder="Message"
+                      id="message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="submit"
+                      value="Send Message"
+                      class="btn btn-primary py-3 px-5"
+                      id="submit-btn"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 d-flex pl-md-5">
+            <div class="row">
+              <div class="dbox w-100 d-flex">
+                <div
+                  class="icon d-flex align-items-center justify-content-center"
+                >
+                  <span class="fa fa-map-marker"></span>
+                </div>
+                <div class="text">
+                  <p>
+                    <span>Address:</span> Sambhajinagar-431103, Maharashtra,
+                    India
+                  </p>
+                </div>
+              </div>
+              <div class="dbox w-100 d-flex">
+                <div
+                  class="icon d-flex align-items-center justify-content-center"
+                >
+                  <span class="fa fa-phone"></span>
+                </div>
+                <div class="text">
+                  <p>
+                    <span>Phone:</span>
+                    <a href="tel://9373849068">+91 9373849068</a>
+                  </p>
+                </div>
+              </div>
+              <div class="dbox w-100 d-flex">
+                <div
+                  class="icon d-flex align-items-center justify-content-center"
+                >
+                  <span class="fa fa-paper-plane"></span>
+                </div>
+                <div class="text">
+                  <p>
+                    <span>Email:</span>
+                    <a href="#">akshaychavan010101@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+              <div class="dbox w-100 d-flex">
+                <div
+                  class="icon d-flex align-items-center justify-content-center"
+                >
+                  <span class="fa fa-globe"></span>
+                </div>
+                <div class="text">
+                  <p>
+                    <span>LinkedIn</span>
+                    <a
+                      href="https://www.linkedin.com/in/akshayc112/"
+                      target="_blank"
+                      >akshay112</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="dbox w-100 d-flex">
+                <div
+                  class="icon d-flex align-items-center justify-content-center"
+                >
+                  <span class="fa fa-github"></span>
+                </div>
+                <div class="text">
+                  <p>
+                    <span>GitHub</span>
+                    <a
+                      href="https://github.com/akshaychavan010101"
+                      target="_blank"
+                      >akshay010101</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div id="map" class="map"></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
