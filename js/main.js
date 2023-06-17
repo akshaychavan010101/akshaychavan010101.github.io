@@ -339,13 +339,16 @@ async function sendMsgfun(event) {
 
   submit_btn.value = "Sending...";
   try {
-    const promise = await fetch("https://eager-red-gaiters.cyclic.app/sendmail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    const promise = await fetch(
+      "https://eager-red-gaiters.cyclic.app/sendmail",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
     const res = await promise.json();
     submit_btn.value = "Send Message";
 
@@ -361,3 +364,11 @@ async function sendMsgfun(event) {
     swal("Something went wrong", "", "error");
   }
 }
+
+const scrollLittle = document.querySelectorAll(".down_btn");
+
+scrollLittle.forEach((item) => {
+  item.addEventListener("click", () => {
+    window.location.href = "#about-section";
+  });
+});
