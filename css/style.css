@@ -12694,6 +12694,8 @@ h5,
   background: transparent;
   color: white;
   font-size: larger;
+  text-align: center;
+  outline: none;
 }
 
 .ftco-about .img-about {

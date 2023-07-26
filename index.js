@@ -40,36 +40,10 @@ links.forEach((link) => {
   });
 });
 
-// bio text
-const typeText = document.getElementById("user-detail-intro");
-const text =
-  "An Ambitious Node Back End Developer. Have more than 1200 plus hours of coding experience, 30 weeks of intensive practice at Masai School and have the capabilities of writing web the pages using both Front End Technologies as well as Back End Technologies. Solved more than 600 Data Structures and Algorithms Questions. Looking for a job opportunity in Technology Driven Organization that will enhance one's Carrier and showcase one's Skills.";
-
-let i = 0;
-let br = i;
-function typing() {
-  if (i < text.length) {
-    typeText.innerHTML += text.charAt(i);
-    i++;
-    if (text[i] === " ") {
-      br++;
-    }
-    if (br === 10) {
-      typeText.innerHTML += `<br>`;
-      br = 0;
-    }
-    let interval = setTimeout(typing, Math.floor(Math.random() * 10) + 30);
-    if (i === text.length) {
-      clearInterval(interval);
-    }
-  }
-}
-
 const header = document.querySelector("header");
 header.style.transition = "all 0.5s ease";
 
 window.onload = () => {
-  // typing();
   if (window.pageYOffset == 0) {
     header.style.backgroundColor = "transparent";
   } else {
@@ -143,7 +117,7 @@ const sendMail = async (event) => {
   }
 };
 
-// skills section title 
+// skills section title
 const skillsDiv = document.querySelectorAll("#skills-container>div");
 
 const displaySkills = () => {
