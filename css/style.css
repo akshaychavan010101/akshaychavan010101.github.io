@@ -12176,7 +12176,7 @@ h5,
 }
 
 .one-third {
-  background-image: url(../images/home.png);
+  /* background-image: url(../images/home.png); */
 }
 
 .owl-carousel.home-slider .slider-item .slider-text .one-third {
